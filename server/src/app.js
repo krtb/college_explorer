@@ -14,3 +14,6 @@ app.use(cors())
 
 // log message to console on Express.js start
 console.log("Hello, world!");
+
+// Server listening on PORT 8081
+app.listen(process.env.PORT || 8081)
