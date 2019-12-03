@@ -11,3 +11,6 @@ const app = express()
 app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
+
+// log message to console on Express.js start
+console.log("Hello, world!");
