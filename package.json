@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/krtb/college_explorer/issues"
   },
-  "homepage": "https://github.com/krtb/college_explorer#readme"
+  "homepage": "https://github.com/krtb/college_explorer#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
