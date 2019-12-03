@@ -12,7 +12,7 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
 
-// log message to console on Express.js start
+// display JSON msg to route /hello, on Express.js start
 app.get('/hello', (req, res) => {
     res.send(
         [{
