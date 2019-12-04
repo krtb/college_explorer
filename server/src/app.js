@@ -13,11 +13,11 @@ app.use(bodyParser.json())
 app.use(cors())
 
 // display JSON msg to route /hello, on Express.js start
-app.get('/hello', (req, res) => {
+app.get('/', (req, res) => {
     res.send(
         [{
-            title: "Hello World",
-            description: "Hi there! This is the college_explorer app!"
+            message: "Hello World",
+            about: "Hi there! This is the college_explorer app!"
         }]
     )
 })
