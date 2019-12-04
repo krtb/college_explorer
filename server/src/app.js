@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 // display JSON msg to route /hello, on Express.js start
-app.get('/', (req, res) => {
+app.get('/hello', (req, res) => {
     res.send(
         [
             {
