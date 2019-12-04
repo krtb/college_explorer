@@ -15,10 +15,12 @@ app.use(cors())
 // display JSON msg to route /hello, on Express.js start
 app.get('/', (req, res) => {
     res.send(
-        [{
+        [
+            {
             message: "Hello World",
             about: "Hi there! This is the college_explorer app!"
-        }]
+            }
+        ]
     )
 })
 
