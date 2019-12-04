@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 })
 
 //display colleges that offer bachelor's degree in education
-// TODO: replace hard coded data with College ScoreC Card API data
+// TODO: replace hard coded data with College Score Card API data
 app.get('/schools', (req, res) => {
     res.send(
         [{
