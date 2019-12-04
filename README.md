@@ -11,5 +11,6 @@
 
 # Resources
 * [Node Docs](https://nodejs.org/dist/latest-v13.x/docs/api/)
+* [Webpack Docs, "resolve.alias"](https://webpack.js.org/configuration/resolve/#resolvealias)
 
 # Issue & Solution Documentation
