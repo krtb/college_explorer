@@ -3,6 +3,9 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
+var axios = require('axios');
+// Add dotenv for use of ENV vars for local development
+require('dotenv').config()
 
 // instantiate express
 const app = express()
@@ -25,15 +28,13 @@ app.get('/hello', (req, res) => {
 })
 
 //display colleges that offer bachelor's degree in education
-// TODO: replace hard coded data with College Score Card API data
 app.get('/schools', (req, res) => {
-    res.send(
-        [{
-            school: "University of Florida",
-            location: "Gainesville, Florida"
-        }]
-    )
+    axios.get(`${process.env.VUE_APP_COLLEGE_SCORECARD_API + process.env.VUE_APP_COLLEGE_SCORECARD_API_KEY}`)
+            .then(data => res.send(data.data.results))
+            .catch(err => res.send(err));
 })
 
 // Server listening on PORT 8081
 app.listen(process.env.PORT || 8081)
+
+console.log("Hello, world!");
