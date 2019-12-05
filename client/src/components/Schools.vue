@@ -1,8 +1,17 @@
 <template>
   <div class="schools">
-    <h1>Schools</h1>
+    
+    <h1>Colleges and Universities</h1>
+
     This file will list all the schools.
-    {{ schools }}
+     
+    <div v-for="school in schools" v-bind:key="school.id">
+      <p>
+        <span><b>School: {{ school["school.name"] }}</b></span><br />
+        <span>Admission Rate: {{ school["latest.admissions.admission_rate.overall"] }}</span>
+      </p>
+    </div>
+
   </div>
 </template>
 
