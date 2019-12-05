@@ -1,6 +1,12 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <div>
+      <ul>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/schools">Schools</router-link></li>
+      </ul>
+    </div>
     <router-view/>
   </div>
 </template>
@@ -19,5 +25,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}li {
+  display: inline-block;
+  margin: 0 10px;
+}a {
+  color: #42b983;
 }
 </style>
