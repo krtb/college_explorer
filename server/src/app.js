@@ -37,4 +37,5 @@ app.get('/schools', (req, res) => {
 // Server listening on PORT 8081
 app.listen(process.env.PORT || 8081)
 
+// Display message to console on server start up
 console.log("Hello, world!");
