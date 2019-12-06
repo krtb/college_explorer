@@ -9,16 +9,19 @@
      
      <div >
         <b-table-simple  hover small caption-top responsive class="shadow-lg p-3 mb-5 bg-white rounded">
-      <tr>
-          <th>School</th>
-          <th>Students</th>
-          <th>Admission Rate</th>
+
+        <tr>
+            <th>School</th>
+            <th>Students</th>
+            <th>Admission Rate</th>
         </tr>
+
         <tr v-for="school in sortedArray" v-bind:key="school.id">
           <td>{{ school["school.name"] }}</td>
           <td>{{ school["latest.student.size"] }}</td>
           <td>{{ school["latest.admissions.admission_rate.overall"]  | acceptancePercentage }}%</td>
         </tr>
+
         </b-table-simple>
       </div>
 
@@ -29,6 +32,7 @@
 <script>
 import SchoolsService from '../../services/SchoolsService'
 import { BTableSimple } from 'bootstrap-vue'
+
 export default {
   name: 'schools',
   data () {
@@ -75,6 +79,6 @@ export default {
       // convert decimal integer of acceptance rate to percentage
       return Math.floor(value * 100 )
     }
-  }
+  },
 }
 </script>
