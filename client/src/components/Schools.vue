@@ -3,12 +3,15 @@
     
     <h1>Colleges and Universities</h1>
 
-    This file will list all the schools.
+    A list of New York schools that <br />
+    offer a bachelor's degree in Education.
      
     <div v-for="school in sortedArray" v-bind:key="school.id">
       <p>
-        <span><b>School: {{ school["school.name"] }}</b></span><br />
-        <span>Admission Rate: {{ school["latest.admissions.admission_rate.overall"] }}</span>
+        <span><b> {{ school["school.name"] }} </b></span><br />
+        <span> Student Body Size: {{ school["latest.student.size"] }} </span>
+        <br />
+        <span>Admission Rate: {{ school["latest.admissions.admission_rate.overall"]  | acceptancePercentage }}% </span>
       </p>
     </div>
 
@@ -53,6 +56,12 @@ export default {
 
       // returns an alphabetically sorted array
       return this.schools.sort(compare);
+    }
+  },
+  filters: {
+  acceptancePercentage: function (value) {
+      // convert decimal integer of acceptance rate to percentage
+      return Math.floor(value * 100 )
     }
   }
 }
