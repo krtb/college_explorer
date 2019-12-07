@@ -78,10 +78,6 @@
       </b-carousel-slide>
     </b-carousel>
 
-    <p class="mt-4">
-      Slide #: {{ slide }}<br>
-      Sliding: {{ sliding }}
-    </p>
   </div>
 
 
@@ -146,6 +142,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #ffe493
+}
+
+html {
+  background-color: #ffe493
 }
 
 ul {
@@ -157,4 +158,9 @@ ul {
 }a {
   color: #FFF;
 }
+
+.bg-info {
+  background-color: #16d2aa !important;
+}
+
 </style>
