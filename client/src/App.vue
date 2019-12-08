@@ -29,10 +29,10 @@
     <div>
     <b-carousel
       id="carousel-1"
+      fade
       v-model="slide"
-      :interval="4000"
-      controls
       indicators
+      :interval="3000"
       background="#ababab"
       img-width="1024"
       img-height="480"
