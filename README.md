@@ -4,7 +4,7 @@
 ![](./assets/collegeList.png)
 
 # To Run Server
-1. cd into server folder
+1. cd into server/src folder
 2. yarn add or npm install
 3. `node app.js` 
 
