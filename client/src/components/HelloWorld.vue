@@ -2,7 +2,7 @@
 
   <div class="hello">
 
-    <div class="card w-50 mx-auto" style="width: 200px;">
+    <div class="card w-50 mx-auto shadow-lg p-3 bg-white rounded" style="width: 200px;">
       <div class="card-body">
         <h1 class="card-title">{{ msg }}</h1>
         <p class="card-text " >
