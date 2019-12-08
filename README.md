@@ -3,14 +3,19 @@
 
 ![](./assets/collegeList.png)
 
+# To Run Server
+1. cd into server folder
+2. yarn add or npm install
+3. `node app.js` 
+
+# To Run App
+1. cd into client folder
+2. yarn add or npm install
+3. `npm start`
+
 # Tech Stack
 * Node.js
 * Express.js
 * Vue.js
-* NPM
-
-# Resources
-* [Node Docs](https://nodejs.org/dist/latest-v13.x/docs/api/)
-* [Webpack Docs, "resolve.alias"](https://webpack.js.org/configuration/resolve/#resolvealias)
-
-# Issue & Solution Documentation
+* NPM/Yarn
+* Webpack
