@@ -1,11 +1,22 @@
 
 <template>
-  <div class="schools mx-auto" style="width: 400px;">
+  <div class="schools mx-auto" style="width: 600px;">
     
-    <h1>Colleges and Universities</h1>
+        <div class="college card w-50 mx-auto" style="width: 200px;">
+      <div class="card-body">
+        <h1 class="card-title">Colleges <br/>
+          and 
+          <br>
+          Universities</h1>
+        <p class="card-text " >
+          
+          
+          A list of New York schools that <br />
+    offer a bachelor's degree in Education.
 
-    <p>A list of New York schools that <br />
-    offer a bachelor's degree in Education. </p>
+        </p>
+      </div>
+    </div>
      
      <div >
         <b-table-simple  hover small caption-top responsive class="shadow-lg p-3 mb-5 bg-white rounded">
@@ -82,3 +93,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.college {
+  margin: 50px;
+  margin-bottom: 50px;
+}
+</style>

@@ -3,19 +3,19 @@
   <div class="hello">
 
     <div class="card w-50 mx-auto" style="width: 200px;">
-  <div class="card-body">
-    <h1 class="card-title">{{ msg }}</h1>
-    <p class="card-text " >
-      
-      Hi! This is a web app built with Vue, Node and Express. <br />
-      
-      You can click on the "schools" link you can view a list
-      of colleges and universities in New York city that offer a bachelor's 
-      degree in education.
+      <div class="card-body">
+        <h1 class="card-title">{{ msg }}</h1>
+        <p class="card-text " >
+          
+          Hi! This is a web app built with Vue, Node and Express. <br />
+          
+          You can click on the "schools" link you can view a list
+          of colleges and universities in New York city that offer a bachelor's 
+          degree in education.
 
-    </p>
-  </div>
-</div>
+        </p>
+      </div>
+    </div>
 
   </div>
 
