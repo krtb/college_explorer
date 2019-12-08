@@ -50,7 +50,7 @@ a {
 }
 
 .hello {
-  margin: 100px;
+  margin: 50px;
 }
 
 .card-text {
