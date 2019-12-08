@@ -3,6 +3,9 @@
 > * Can View By
 >   * Enrollment Size
 >   * Alphabetically
+
+![](./assets/collegeList.png)
+
 # Tech Stack
 * Node.js
 * Express.js
