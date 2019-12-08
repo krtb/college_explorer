@@ -4,8 +4,8 @@
     
     <h1>Colleges and Universities</h1>
 
-    A list of New York schools that <br />
-    offer a bachelor's degree in Education.
+    <p>A list of New York schools that <br />
+    offer a bachelor's degree in Education. </p>
      
      <div >
         <b-table-simple  hover small caption-top responsive class="shadow-lg p-3 mb-5 bg-white rounded">
